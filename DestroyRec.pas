@@ -32,9 +32,9 @@ type
   TStackFrame = packed record  // Stack frame identical in Delphi 6,7,XE4
     Ebp:Pointer;
     ReturnAdr:Pointer;
-    Self:Pointer; //PDestroyRec here
-    Dest:Pointer; //Ptr to IInterface
-    Self2:Pointer; //PDestroyRec here
+    Self:Pointer; //IInterface source
+    Dest:Pointer; //Ptr to IInterface Dest
+    Self2:Pointer;//IInterface source
   end;
 
   PDestroyRec = ^TDestroyRec;
